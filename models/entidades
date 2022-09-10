@@ -1,0 +1,12 @@
+class Usuario(db.Model):
+    id = db.Column(db.integer, primary_key = True)
+    nome = db.Column(db.String(50))
+    genero = db.Column(db.String(1))
+    cpf = db.Column(db.String(11))
+    telefone = db.Column(db.integer(15))
+    email = db.Column(db.String(50))
+    senha = db.Column(db.String(50))
+
+class Pedido(db.Model):
+    id = db.Column(db.integer, primary_key = True)
+    
